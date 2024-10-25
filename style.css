@@ -1,0 +1,219 @@
+/* Plain Styles */
+body {
+  margin: 0;
+}
+
+/* Font Styles */
+.league-spartan-regular {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Main Section Styles */
+.main-section {
+  background-image: linear-gradient(to bottom, #007A68, #1d1e2c);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-items{
+  display: flex;
+}
+
+/* Header Styles */
+.header-bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 64px;
+  padding: 7px;
+  background-color: #1d1e2c;
+  color: white;
+  box-shadow: 4px 4px 0px rgb(2, 161, 134, 1);
+  font-size: 28px;
+  font-weight: 300;
+  border-radius: 25px;
+  margin-top: 25px;
+}
+
+/* Interactice Section Styles */
+.main-interactive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 325px;
+  background-image: linear-gradient(to bottom, #02a186, #016554);
+  padding: 7px;
+  border-radius: 25px;
+  box-shadow: 6px 8px 0px rgb(29, 30, 44, 1);
+}
+
+/* Playlist Section Styles */
+.playlist-description {
+  padding: 10px 20px;
+  width: 300px;
+  background-color: #1d1e2c;
+  border-radius: 25px;
+  color: #e7fffb;
+  font-size: 20px;
+}
+
+.playlist-header {
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+}
+
+.playlist-subheader {
+  font-weight: 350;
+  font-size: 18px;
+}
+
+/* Inquiry Styles */
+.inquiry{
+  float: right;
+}
+
+.inquiry-button{
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: #1d1e2c;
+  font-size: 20px;
+}
+
+.inquiry-button:hover{
+  color: #1d1e2c;
+  background-color: white;
+  border-radius: 0px;
+  transition: all 1s;
+}
+
+/* Button Section Styles */
+.button-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.large-button {
+    border: none;
+    border-radius: 50px;
+    width: 125px;
+    height: 35px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #1d1e2c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: auto;
+}
+
+.large-button-ready {
+    border: none;
+    border-radius: 50px;
+    width: 125px;
+    height: 35px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #1d1e2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 0px rgb(29, 30, 44, 1);
+    transition: all 1s;
+}
+
+.large-button-ready:hover{
+    width: 150px;
+    transition: all 1s;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+    cursor: auto;
+}
+
+.link-ready{
+    text-decoration: none;
+    color: #1d1e2c;
+}
+
+/* Inquiry Modal Styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+@keyframes animatetop {
+  from {top: -300px; opacity: 0; scale: 0}
+  to {top: 0; opacity: 1; scale: 1;}
+}
+.modal-content {
+  background-color: #02a186;
+  color: #1d1e2c;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 30px;
+  border-radius: 0px;
+  width: 70%; /* Could be more or less, depending on screen size */
+  height: 40%;
+  box-shadow: 4px 4px 0px rgb(255, 255, 255, 1);
+  animation-name: animatetop;
+  animation-duration: 1s;
+  transition: all 1s;
+}
+.close {
+  color: #1d1e2c;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 40px;
+  transition: all 1s;
+}
+.inquiry-title{
+  font-size: 30px;
+  padding: 0px 20px;
+}
+.inquiry-text{
+  font-size: 25px;
+  line-height: 30px;
+  padding: 0px 20px;
+}

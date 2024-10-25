@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlists Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- This page will be used to structure our project. -->
+    <main class="league-spartan-regular main-section">
+      <!-- Header Text -->
+      <header>
+        <h1 class="header-bubble">Playlist Generator</h1>
+      </header>
+      <!-- Main Interactive Section. -->
+      <section class="main-items">
+        <section class="main-interactive">
+          <!-- Playlist Description -->
+          <section class="playlist-description">
+            <!-- We may add modals for these that will tell a user more information. -->
+            <h2 id="playlist-name" class="playlist-header">Playlist</h2>
+            <h3 id="created-in" class="playlist-subheader">Created In</h3>
+            <h4 id="vibe" class="playlist-subheader">Vibes</h4>
+            <!-- Inquiry Button -->
+            <section class="inquiry">
+              <button id="modalButton" class="inquiry-button">?</button>
+            </section>
+          </section>
+          <!-- Interactive Buttons. These should have modals that confirm the action, as well tell you more about the action. -->
+          <section class="button-section">
+            <!-- Section for shuffle button -->
+            <section>
+              <!-- 'Discard Button Below' -->
+              <button onclick="displayPlaylist()" class="large-button-ready">
+                SHUFFLE
+              </button>
+            </section>
+            <!-- Section for go to button -->
+            <section>
+              <!-- 'Go To' Button Below -->
+              <button id="go-to-button" class="large-button">
+                <a id="go-to" class="link" href="">GO TO</a>
+              </button>
+            </section>
+          </section>
+          <!-- Backdrop for Entire Section -->
+        </section>
+      </section>
+      <!-- Inquiry Modal -->
+      <section id="myModal" class="modal">
+        <!-- Modal Content -->
+        <section id="modalContent" class="modal-content">
+          <span id="closeButton" class="close">&times;</span>
+          <h2 class="inquiry-title">Welcome to my Playlist Project!</h2>
+          <p class="inquiry-text">
+            This website was made in roughly two days, and is being used to
+            display some of the skills I've been practicing as of late. The
+            'Shuffle' button will generate a playlist from 29 of my playlist
+            titled 'Boos'. The Go To button will take you to the actual
+            playlist!
+          </p>
+        </section>
+      </section>
+    </main>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
